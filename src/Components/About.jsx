@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Footer(){
+
+export default function About() {
     return (
         <div className="w-screen">
-            <h1 className="text-black">footer</h1>
+            <h1>About Us Page</h1>
         </div>
     )
 }
