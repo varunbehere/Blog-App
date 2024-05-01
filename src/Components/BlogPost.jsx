@@ -1,28 +1,13 @@
-import React from 'react';
-import BlogPost from './BlogPost';
+import React from "react";
 
-function Home() {
-  const blogPosts = [
-    { id: 1, title: 'First Blog Post', content: 'Lorem ipsum...', author: 'John Doe' },
-    { id: 2, title: 'Second Blog Post', content: 'Lorem ipsum...', author: 'Jane Smith' },
-    // Add more blog posts as needed
-  ];
-
+function BlogPost({ title, content, author }) {
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-4">Welcome to the Blog!</h1>
-      <div className="grid gap-4">
-        {blogPosts.map((post) => (
-          <BlogPost
-            key={post.id}
-            title={post.title}
-            content={post.content}
-            author={post.author}
-          />
-        ))}
-      </div>
+    <div className="max-w-md bg-red-100 p-5 rounded-md shadow-md mb-4">
+      <h1 className="font-bold text-xl mb-3">{title}</h1>
+      <p className="mb-3 max-h-36 overflow-hidden">{content}</p>
+      <h3 className="font-bold text-md">Author: {author}</h3>
     </div>
   );
 }
 
-export default Home;
+export default BlogPost;
