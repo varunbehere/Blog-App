@@ -7,7 +7,7 @@ export default function Header() {
         navigate('/new-blog-page')
     }
     return (
-        <header className="flex justify-between items-center w-screen shadow-xl px-2 py-1">
+        <header className="flex fixed bg-white justify-between items-center w-screen shadow-xl px-2 py-1">
             <div>
                 <img 
                     className="max-w-28"
