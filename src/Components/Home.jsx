@@ -37,7 +37,7 @@ function Home() {
   ];
 
   return (
-    <div className="container mx-auto py-4  ">
+    <div className="container mx-auto mb-16">
       <h1 className="text-3xl text-center font-bold mb-4">Welcome to the Blog!</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {blogPosts.map((post) => (

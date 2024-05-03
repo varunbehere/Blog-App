@@ -41,7 +41,7 @@ export default function NewBlogPage() {
   };
 
   return (
-    <div className="min-w-screen mx-auto px-4 py-10">
+    <div className="min-w-screen mx-auto px-4 py-4">
       <div className="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8">
         <h1 className="text-3xl font-bold mb-4">Create New Blog</h1>
         <form onSubmit={formSubmit}>
