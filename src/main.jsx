@@ -4,13 +4,12 @@ import App from './App.jsx'
 import './index.css'
 
 import { RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-// import { BrowserRouter } from 'react-router-dom'
 import { Route } from 'react-router-dom'
-import { BrowserRouter } from 'react-router-dom'
 import Contact from './Components/Contact.jsx'
 import About from './Components/About.jsx'
 import Home from './Components/Home.jsx'
 import NewBlogPage from './Components/NewBlogPage.jsx'
+import DetailedBlogPost from './Components/DetailedBlogPost.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements (
@@ -20,6 +19,7 @@ const router = createBrowserRouter(
         <Route path = '/about-us' element= {<About/>}/>
         <Route path = '/contact-us' element= {<Contact/>}/>
         <Route path = '/new-blog-page' element = {<NewBlogPage/>}/>
+        <Route path='/blog/:id' element = {<DetailedBlogPost/>}/>
     </Route>
   )
 )

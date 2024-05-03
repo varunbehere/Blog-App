@@ -26,6 +26,9 @@ export default function Header() {
                     <NavLink to = '/contact-us'> 
                         <li>Contact Us</li>
                     </NavLink>
+                    <NavLink to='/detailed-blog-page'>
+                        <li>Detailed Blog Page</li>
+                    </NavLink>
                 </ul>
             </nav>
             <div className="flex items-center">
