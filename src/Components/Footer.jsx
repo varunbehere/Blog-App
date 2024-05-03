@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex justify-between items-center">
         <p className="text-lg">© 2024 Varun Behere. All rights reserved.</p>
         <div>
-            <p className="text-lg">Feedback on <Link to="mailto:varunbehere@gmail.com">varunbehere@gmail.com</Link></p>
+            <p className="text-lg">Feedback on <Link to="mailto:varunbehere@gmail.com" className="text-red-400 hover:underline">varunbehere@gmail.com</Link></p>
         </div>
       </div>
     </footer>
