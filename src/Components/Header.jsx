@@ -11,7 +11,7 @@ export default function Header() {
             <div>
                 <img 
                     className="max-w-28"
-                    src="/src/logo.jpeg" 
+                    src="/src/assets/logo.jpeg" 
                     alt="Logo" 
                 />
             </div>

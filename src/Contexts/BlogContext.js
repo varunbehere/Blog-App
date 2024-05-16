@@ -1,20 +1,20 @@
-import React, { useContext } from 'react'
+    import React, { useContext } from 'react'
 
-export const BlogContext = React.createContext({
-    blog : [
-        {   
-            id : any ,
-            content : "",
-            author : "",
-            likeCounter : 0,
-        }
-    ],
-    addBlog : (content,author)=>{},
-    likeBlog : (id)=>{}
-})
+    export const BlogContext = React.createContext({
+        blog : [
+            {   
+                id : null ,
+                content : "",
+                author : "",
+                likeCounter : 0,
+            }
+        ],
+        addBlog : (content,author)=>{},
+        likeBlog : (id)=>{}
+    })
 
-export const BlogContextProvider = BlogContext.Provider()
+    export const BlogContextProvider = BlogContext.Provider
 
-export const useBlogContext = ()=>{
-    return useContext(BlogContext)
-}
+    export const useBlogContext = ()=>{
+        return useContext(BlogContext)
+    }
