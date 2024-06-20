@@ -10,15 +10,15 @@ function App() {
   const addBlog = (newBlog) => {
     setBlogs(prev => [...prev, newBlog]);
   };
-
   const likeBlog = (id) => {
-    setBlogs(prev => prev.map(blog => blog.id === id ? { ...blog, likeCounter: (blog.likeCounter || 0) + 1 } : blog));
+    setBlogs(prev => prev.map(blog => blog.id === id ? { ...blog, likeCounter: blog.likeCounter + 1 } : blog));
   };
   useEffect(()=>{
     const blogs = JSON.parse(localStorage.getItem("blogs"))
     if ((blogs && blogs.length) > 0){
       setBlogs(blogs)
     }
+    console.log(blogs)
   },[])
   useEffect(()=>{
     localStorage.setItem("blogs", JSON.stringify(blogs))

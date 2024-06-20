@@ -19,7 +19,7 @@ const router = createBrowserRouter(
         <Route path = '/about-us' element= {<About/>}/>
         <Route path = '/contact-us' element= {<Contact/>}/>
         <Route path = '/new-blog-page' element = {<NewBlogPage/>}/>
-        <Route path='/blog/:id' element = {<DetailedBlogPost/>}/>
+        <Route path='/blog/:blogId' element = {<DetailedBlogPost/>}/>
     </Route>
   )
 )

@@ -1,12 +1,10 @@
 import React, { useId } from "react";
 import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router-dom";
 
-function BlogPost({ title, content, author }) {
+function BlogPost({id, title, content, author }) {
   const navigatorForDetailedBlog = useNavigate()
-  const {blogId} = useParams ()
   const openDetailedBlog = ()=>{
-    navigatorForDetailedBlog(`/blog/${blogId}`)
+    navigatorForDetailedBlog(`/blog/${id}`)
   }
   return (
     <div className="max-w-3xl bg-red-100 p-5 rounded-md shadow-md mb-4 mr-5"

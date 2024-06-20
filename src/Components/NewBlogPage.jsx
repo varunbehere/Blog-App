@@ -10,7 +10,7 @@
       likeCounter : 0,
   });
     
-    const {blog, addBlog} = useBlogContext()
+    const {addBlog} = useBlogContext()
 
     const handleInputChange = (e) => {
       const fieldName = e.target.name;
@@ -26,6 +26,11 @@
     const formSubmit = (e) => {
       e.preventDefault()
       addBlog(post)
+      setPost({id : null ,
+        title: '',
+        content : "",
+        author : "",
+        likeCounter : 0,})
     }
 
     return (
