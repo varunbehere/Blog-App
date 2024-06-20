@@ -4,12 +4,13 @@
         blog : [
             {   
                 id : null ,
+                title: "",
                 content : "",
                 author : "",
                 likeCounter : 0,
             }
         ],
-        addBlog : (content,author)=>{},
+        addBlog : (title,content,author)=>{},
         likeBlog : (id)=>{}
     })
 
